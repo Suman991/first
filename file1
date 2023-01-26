@@ -1,1 +1,13 @@
-ytdfxv
+/*check the first occurance of a given character with specified indices*/
+int find_between(char a[],char c,int start_index,int end_index)
+{
+    int i,l=str_len(a);
+    if(end_index>l)
+        end_index=l;
+    if(start_index>l)
+        return -1;
+    for(i=start_index;i<end_index;i++)
+        if(c==a[i])
+            return i;
+    return -1;
+}
